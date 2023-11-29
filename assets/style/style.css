@@ -1,0 +1,124 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+:root {
+    --primary-dark: #202124;
+    --secondary-dark-color: #ffffff0d;
+    --light-color: #fafafa;
+    --primary-blue: #09f;
+    --secondary-blue: rgb(0, 119, 198);
+    --primary-green: #9f0;
+    --primary-red: rgb(255, 0, 93);
+    --primary-orange: #f90;
+    --primary-purple: #90f;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+}
+
+main {
+    min-height: 100dvh;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+section {
+    margin-top: 60px;
+}
+
+.account-nav {
+
+} 
+
+/* Header */
+
+header {
+    background-color: #fff;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 60px;
+}
+
+#account-nav img {
+    width: 50px;
+    border-radius: 50%;
+    width: 42px;
+}
+
+li {
+    display: inline-block;
+}
+
+li + li {
+    margin-left: 20px;
+}
+
+.left-header, .right-header {
+    width: 175px;
+    display: flex;
+}
+
+.left-header {
+    justify-content: flex-start;
+}
+
+.right-header {
+    justify-content: flex-end;
+}
+
+/* Post message */
+
+textarea {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    resize: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 6px;
+}
+
+.textarea-wrapper {
+    position: relative;
+}
+
+.textarea-wrapper .primary-button {
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+}
+
+.primary-button {
+    background-color: var(--primary-blue);
+    color: var(--light-color);
+    width: 100px;
+    transition: all 0.5s ease;
+}
+
+.primary-button:hover {
+    background-color: var(--secondary-blue);
+}
+
+input {
+    background-color: var(--secondary-dark-color);
+    color: var(--light-color);
+    padding: 7px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 42px;
+}
