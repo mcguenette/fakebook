@@ -38,7 +38,7 @@ section {
 /* Header */
 
 header {
-    background-color: #fff;
+    background-color: #d1d2ff;
 }
 
 .header-wrapper {
@@ -65,6 +65,11 @@ li {
 
 li + li {
     margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-dark);
 }
 
 .left-header, .right-header {
@@ -118,7 +123,7 @@ textarea {
 
 input {
     background-color: var(--secondary-dark-color);
-    color: var(--light-color);
+    color: var(--primary-dark);
     padding: 7px 15px;
     border-radius: 4px;
     margin-right: 10px;
