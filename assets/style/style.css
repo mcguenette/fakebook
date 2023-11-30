@@ -2,7 +2,7 @@
 @import url(./reset.css);
 
 :root {
-    --primary-dark: #202124;
+    --primary-dark: #172B4D;
     --secondary-dark-color: #ffffff0d;
     --light-color: #fafafa;
     --primary-blue: #09f;
@@ -16,6 +16,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--light-color);
+    color: var(--primary-dark);
 }
 
 main {
@@ -49,10 +50,13 @@ header {
     height: 60px;
 }
 
-#account-nav img {
-    width: 50px;
+.account-img, .new-post span img {
     border-radius: 50%;
-    width: 42px;
+    width: 35px;
+}
+
+img.post-img {
+    margin-top: 20px;
 }
 
 li {
@@ -125,20 +129,39 @@ input {
 
 /* New posts */
 
-div#new-post {
+.new-post {
+    position: relative;
     padding: 20px;
-    /* height: 250px; */
     width: 50%;
     background-color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-inline: auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     border-radius: 6px;
+    flex-direction: column;
 }
+
+.new-post p {
+    padding: 20px 0px 0px;
+}
+
+.new-post span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+small {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #909090;
+}
+
+
 
 /* Modal */
 
@@ -159,7 +182,7 @@ div#new-post {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     display: none;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 0.4rem;
     width: 500px;
     padding: 20px;
@@ -167,10 +190,6 @@ div#new-post {
     background-color: white;
     border-radius: 6px;
     z-index: 3;
-}
-
-.modal-title img {
-    border-radius: 50%;
 }
 
 .modal .modal-title {
@@ -207,4 +226,22 @@ div#new-post {
     background: #eee;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.modal-content {
+    margin-top: 15px;
+    line-height: 28px;
+}
+
+.modal-content li {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.modal-content strong {
+    margin-right: 10px;
 }
