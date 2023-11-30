@@ -80,6 +80,7 @@ onEvent('submit', form, function (event) {
         const newPost = new Post(postContent, subscriber, imageFile);
         newPost.render();
         textarea.value = '';
+        imageInput.value = '';
     } else {
         textarea.focus();
     }
