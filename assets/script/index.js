@@ -27,4 +27,3 @@ onEvent('keydown', document, function (e) {
 onEvent('click', openModalBtn, openModal);
 onEvent('click', overlay, closeModal);
 onEvent('click', closeModalBtn, closeModal);
-

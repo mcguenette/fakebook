@@ -11,17 +11,68 @@
     <link rel="shortcut icon"
     href="https://res.cloudinary.com/dzdgpwtox/image/upload/v1656263678/designer-tool-uploads/bucket_9200/1656263676160.png"
     type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500;600&family=Poppins:wght@400;800&display=swap" rel="stylesheet">
-    <script src="./assets/script/index.js" type="module"></script>
     <script src="https://kit.fontawesome.com/20608a4ccb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./assets/script/index.js" type="module"></script>
     <title>FakeBook</title>
 </head>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="left-header">
+                    <h1>FakeBook</h1>
+                </div>
+                <div class="center">
+                    <nav>
+                        <ul>
+                            <li>Friends</li>
+                            <li>Pages</li>
+                            <li>Groups</li>
+                            <li>My ads</li>
+                            <li>Settings</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-header">
+                    <div id="account-nav" class="modal-open"><img src="./assets/img/1694563354659.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <div class="container">
-            
+            <div class="modal-wrapper">
+                <div class="modal hidden">
+                    <div class="modal-title">
+                        <img src="./assets/img/1694563354659.jpg" width="50px" height="50px" alt="user" />
+                        <button class="modal-close">⨉</button>
+                    </div>
+                    <div>
+                        <h3>Stay in touch</h3>
+                        <p>This is a dummy newsletter form so don't bother trying to test it...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay hidden"></div>
+            <section>
+                <div class="post-wrapper">
+                    <div class="textarea-wrapper">
+                        <form action="post">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="What's new MC?"></textarea>
+                            <input type="button" value="Post" class="primary-button">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="new-post">
+                </div>
+            </section>
+        </div>
         </div>
     </main>
 </body>
