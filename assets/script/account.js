@@ -112,10 +112,11 @@ class Post extends Subscriber {
         postContent.appendChild(internalContent);
         postContent.appendChild(postImage);
         postContent.appendChild(timestampElement);
-   
 
-        const postsSection = select('#posts-section');
-        postsSection.appendChild(postContent);
+        // const postsSection = select('#posts-section');
+        const renderPost = select('.render-post');
+        const newestPost = renderPost.firstChild;
+        newestPost ? renderPost.insertBefore(postContent, newestPost) : renderPost.appendChild(postContent);
     }
 }
 
