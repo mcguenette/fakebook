@@ -19,6 +19,7 @@
     <script src="./assets/script/index.js" type="module"></script>
     <title>FakeBook</title>
 </head>
+<body>
     <header>
         <div class="container">
             <div class="header-wrapper">
@@ -37,7 +38,7 @@
                     </nav>
                 </div>
                 <div class="right-header">
-                    <div id="account-nav" class="modal-open"><img src="./assets/img/1694563354659.jpg" alt="">
+                    <div id="account-nav" class="modal-open"><img src="./assets/img/1694563354659.jpg" alt="user" class="account-img">
                     </div>
                 </div>
             </div>
@@ -48,29 +49,28 @@
             <div class="modal-wrapper">
                 <div class="modal hidden">
                     <div class="modal-title">
-                        <img src="./assets/img/1694563354659.jpg" width="50px" height="50px" alt="user" />
+                        <img src="./assets/img/1694563354659.jpg" alt="user" class="account-img"/>
                         <button class="modal-close">⨉</button>
                     </div>
-                    <div>
-                        <h3>Stay in touch</h3>
-                        <p>This is a dummy newsletter form so don't bother trying to test it...</p>
+                    <div class="modal-content">
                     </div>
                 </div>
             </div>
             <div class="overlay hidden"></div>
-            <section>
+            <section id="posts-section">
                 <div class="post-wrapper">
                     <div class="textarea-wrapper">
-                        <form action="post">
+                        <form method="post" enctype="multipart/form-data">
                             <textarea name="" id="" cols="30" rows="10" placeholder="What's new MC?"></textarea>
-                            <input type="button" value="Post" class="primary-button">
+                            <i class="fa-solid fa-image"></i><input type="file" name="image" accept="image/*">
+                            <input type="submit" value="Post" class="primary-button">
                         </form>
                     </div>
                 </div>
             </section>
             <section>
-                <div id="new-post">
-                </div>
+                <!-- <div id="new-post">
+                </div> -->
             </section>
         </div>
         </div>
