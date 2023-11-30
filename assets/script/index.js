@@ -5,7 +5,7 @@ import { onEvent, select } from './utils.js';
 
 const modal = select('.modal');
 const overlay = select('.overlay');
-const openModalBtn = select('.modal-open');
+const openModalTrigger = select('.modal-open');
 const closeModalBtn = select('.modal-close');
 
 const openModal = function () {
@@ -24,7 +24,7 @@ onEvent('keydown', document, function (e) {
     }
 });
 
-onEvent('click', openModalBtn, openModal);
+onEvent('click', openModalTrigger, openModal);
 onEvent('click', overlay, closeModal);
 onEvent('click', closeModalBtn, closeModal);
 
