@@ -1,6 +1,6 @@
 'use strict';
 
-import { User, Subscriber, Post } from './account.js';
+import { User, Subscriber, Post } from './Account.js';
 // import { Post } from './post.js';
 import { onEvent, select } from './utils.js';
 
